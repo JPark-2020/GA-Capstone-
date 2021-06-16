@@ -1,0 +1,75 @@
+{%extends 'base.html' %}
+{%load static%}
+
+{%block title%}
+NOW! - About 
+{%endblock%}
+
+{%block css_files%}
+<link rel="stylesheet" href={%static 'styles/about.css'%}/>
+{%endblock%}
+{%block content%}
+
+<br>
+<br>
+<div class="row">
+    <div class="col-6">
+        <h2>About</h2>
+        <p>
+            Spending time at the gym has always been one of my favorite pasttimes and when I was tasked with creating a capstone project utilizing knowledge gained during my three month bootcamp with General Assembly,
+            I leapt at the idea of creating a fitness app. <br><br>
+            Arnold is meant to be an app for fitness enthusiasts of all levels. At the moment, the workouts available include premade plans for Yoga, Bodyweight and Boxing exercises. 
+            While the workouts themselves are listed for 3-5 minutes, users are encouraged to repeat them 4-5 times.If you are checking out this app, please feel free to send me some feedback on things you like and areas I can improve
+            on.
+        </p>
+    </div>
+    <div class="col-6">
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+    </div>
+    <div class="col-6">
+        <h2 id="head2">Technologies Used</h2>
+            <div class="row">
+                <li><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>HTML</li>
+                <li><img src="https://img.icons8.com/color/48/000000/css3.png"/>CSS</li>
+                <li><img src="https://img.icons8.com/color/48/000000/javascript.png"/>JS</li>
+                <li><img src="https://img.icons8.com/color/48/000000/bootstrap.png"/>Bootstrap</li>
+            </div>
+            <div class="row">
+                <li><img src="https://img.icons8.com/color/48/000000/python.png"/>Python</li>
+                <li><img src="https://img.icons8.com/material-rounded/48/000000/django.png"/>Django</li>
+                <li><img src="https://img.icons8.com/color/48/000000/postgreesql.png"/>PostgreSQL</li>
+            </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <h2>Features</h2>
+        <ol>
+            <li>Interval Workouts for one of three categories: Yoga + Boxing + Bodyweight</li>
+            <li>Log progress in each workout and see how you did for a specific exercise based on date</li>
+            <li>User Auth</li>
+            <li>Full CRUD for entries</li>
+            <li>Relationships between several models</li>
+        </ol>
+    </div>
+    <div class="col-6">
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+    </div>
+    <div class="col-6">
+        <h2>Ideas for the Future...</h2>
+        <ol>
+            <li>Custom Workout Creator</li>
+            <li>Chart visualization for workouts and progress over time</li>
+            <li>Drag drop feature to make your own workouts from the workouts available in exercise index</li>
+            <li>Set a national recommended average for each workout. If user logs an entry with greater repetitions than average highlight that set in green for encouragement.</li>
+        </ol>
+    </div>
+</div>
+
+{%endblock%}

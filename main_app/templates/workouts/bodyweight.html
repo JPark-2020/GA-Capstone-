@@ -1,0 +1,31 @@
+{%load static%}
+{%block js_files%}
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous" defer></script>
+    <script defer src={%static 'scripts/bodyweightScripts/bodyweight-modal.js'%}></script>
+    <script defer src={%static 'scripts/bodyweightScripts/bodyweight-workout.js'%}></script>
+{%endblock%}
+{%block css_files%}
+    <link rel="stylesheet" href={%static 'styles/bodyStyles/body-modal.css'%}/>
+    <link rel="stylesheet" href={%static 'styles/bodyStyles/body-workout.css'%}/>
+{%endblock%}
+
+{%block content%}
+<h3>Body - 4 minute Workout</h3>
+<p>Do each exercise for 30 seconds and move on to next</p>
+<button id="bodyButton">Begin Workout</button>
+
+{% comment %} repeat this 3 times - 15 min total {% endcomment %}
+<div id="bodyModal" class="modal">
+  <div class="body-modal-content">
+    <span class="close">&times;</span>
+    <div>
+        <button type="button" class="startTimer">START</button>
+        <p class="timer">4:00</p>
+        <p class="exercise1">Exercise</p>
+    </div>
+  </div>
+</div>
+{%endblock%}

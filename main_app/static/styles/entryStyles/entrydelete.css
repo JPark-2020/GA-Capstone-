@@ -1,0 +1,27 @@
+.title{ 
+    font-weight: bolder; 
+    font-family: 'Lobster', cursive;
+    text-align: center; 
+    color:black; 
+    margin-top: 50px; 
+}
+
+form{
+    font-size: 22px; 
+    font-family: 'Noto Serif JP', serif;
+    text-align: center; 
+}
+
+body{
+    background-color: lightblue; 
+}
+#confirmbutton{
+    color:green;
+    margin-top: 50px;
+    margin-right: 20px; 
+}
+#cancelbutton{
+    text-decoration: none;
+    color: red; 
+    margin-top: 50px;
+}

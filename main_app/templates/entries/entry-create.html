@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+{%load static%}
+{% block content %}
+{%block css_files%}
+<link rel="stylesheet" href="{%static 'styles/entryStyles/entrycreate.css'%}"/>
+{%endblock%}
+<h1>Add an Entry</h1>
+
+<form method="post">
+  {% csrf_token %} 
+<!--  Generate inputs  -->
+  {{form.as_p}} 
+<!--  Submit form  -->
+  <input type="submit" value="Submit" />
+</form>
+
+{% endblock %}

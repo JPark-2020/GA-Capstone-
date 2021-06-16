@@ -1,0 +1,30 @@
+h2{
+    text-align: center; 
+    color: maroon; 
+    text-decoration: underline; 
+}
+
+body{
+    background-color: lightblue; 
+}
+
+.row > li{
+    display: inline-flex; 
+    text-decoration-style: none; 
+    font-size: 22px; 
+}
+
+p{
+    font-size: 22px; 
+    margin-left: 20px; 
+}
+
+ol > li{
+    font-size: 22px; 
+}
+
+.row{
+    font-family: 'Noto Serif JP', serif;
+    color: black; 
+    font-weight:500; 
+}

@@ -1,0 +1,46 @@
+h1{
+    font-weight: bolder; 
+    font-family: 'Lobster', cursive;
+    text-align: center; 
+}
+
+h2, ul, li, p{ 
+font-family: 'Noto Serif JP', serif;
+}
+
+h2{
+    text-align: center; 
+    text-decoration:underline 3px; 
+}
+
+body{
+background-color: lightblue; 
+}
+
+ul > li{
+    display: flex; 
+    justify-content: center; 
+    text-align: center; 
+    margin-right: 19px; 
+    font-size: 22px;
+}
+
+p{
+    text-align: center; 
+}
+
+a{
+    text-decoration:none; 
+}
+
+#updateDelete{
+    text-align: center; 
+}
+
+#updateButton a{
+    color: green;
+}
+
+#deleteButton a{
+    color: red; 
+}

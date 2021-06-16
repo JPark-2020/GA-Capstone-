@@ -1,0 +1,27 @@
+{% extends 'base.html' %} 
+{%load static%}
+{%block css_files%}
+<link rel="stylesheet" href={%static 'styles/entryStyles/entrydetail.css'%}/>
+{%endblock%}
+
+{% block content %}
+<h1>{{entry}}</h1>
+<h2>Sets/Reps</h2>
+<ul>
+    <li><strong>Set 1:</strong>{{entry.set1}} reps</li>
+    <li><strong>Set 2:</strong>{{entry.set2}} reps</li>
+    <li><strong>Set 3:</strong>{{entry.set3}} reps</li>
+    <li><strong>Set 4:</strong>{{entry.set4}} reps</li>
+    <li><strong>Set 5:</strong>{{entry.set5}} reps</li>
+</ul>
+<h2>Notes:</h2>
+<p>{{entry.notes}}</p>
+
+<br><br>
+<div id="updateDelete">
+    <button id="updateButton" ><a href="{% url 'entry-update' entry.pk %}">Update Entry</a></button>
+    <button id="deleteButton"><a href="{% url 'entry-delete' entry.pk %}" class="button is-danger">Delete Entry</a></button>
+ </div>
+{% endblock %}
+
+

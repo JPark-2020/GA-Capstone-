@@ -1,0 +1,58 @@
+{%extends "base.html" %}
+{%load static%}
+
+{%block title%} NOW! - Exercise Index {%endblock%}
+{%block js_files%}
+<script src={%static 'scripts/main.js'%} defer></script>
+{%endblock%}
+{%block css_files%}
+<link rel="stylesheet" href={%static 'styles/workouts.css'%}/>
+<link rel="stylesheet" href={%static 'styles/main.css'%}/>
+{%endblock%}
+
+{%block content%}
+<h1>All Exercises By Workout</h1>
+
+<div id="exercises-index">
+    <div class="all-exercises">
+    {% for workout in all_workouts%}
+        {%if workout.name == "Boxing"%}
+        <h2>{{workout.name}}</h2>
+            <ul>
+            {%for exercise in box_exercises%}
+                <div class="exercise-entry">
+                    <h3 class="exercise-name">{{exercise.name}}</h3>
+                    <img src="{{exercise.img}}"/>
+                </div>
+            {%endfor%}
+            </ul>
+        {%endif%}
+        
+        {%if workout.name == "Yoga"%}
+        <h2>{{workout.name}}</h2>
+            <ul>
+            {%for exercise in yoga_exercises%}
+                <div class="exercise-entry">
+                    <h3 class="exercise-name">{{exercise.name}}</h3>
+                    <img src="{{exercise.img}}"/>
+                </div>
+            {%endfor%}
+            </ul>
+        {%endif%}
+
+        {%if workout.name == "Bodyweight"%}
+        <h2>{{workout.name}}</h2>
+            <ul>
+            {%for exercise in bodyweight_exercises%}
+                <div class="exercise-entry">
+                    <h3 class="exercise-name">{{exercise.name}}</h3>
+                    <img src="{{exercise.img}}"/>
+                </div>
+            {%endfor%}
+            </ul>
+        {%endif%}
+    {%endfor%}
+    </div>
+</div>
+{%endblock%}
+

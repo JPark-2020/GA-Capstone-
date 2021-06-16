@@ -1,0 +1,31 @@
+{%load static%}
+{%block js_files%}
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous" defer></script>
+    <script defer src={%static 'scripts/yogaScripts/yoga-modal.js'%}></script>
+    <script defer src={%static 'scripts/yogaScripts/yoga-workout.js'%}></script>
+{%endblock%}
+{%block css_files%}
+    <link rel="stylesheet" href={%static 'styles/yogaStyles/yoga-modal.css'%}/>
+    <link rel="stylesheet" href={%static 'styles/yogaStyles/yoga-workout.css'%}/>
+{%endblock%}
+
+{%block content%}
+<h3>YOGA - 5 minute Workout</h3>
+<p>Follow along the above exercises. Hold each position for 30 seconds each.</p>
+<button id="yogaButton">Begin Workout</button>
+
+{% comment %} repeat this 3 times - 15 min total {% endcomment %}
+<div id="yogaModal" class="modal">
+  <div class="yoga-modal-content">
+    <span class="close">&times;</span>
+    <div>
+        <button type="button" class="startTimer">START</button>
+        <p class="timer">5:00</p>
+        <p class="exercise1">Exercise</p>
+    </div>
+  </div>
+</div>
+{%endblock%}

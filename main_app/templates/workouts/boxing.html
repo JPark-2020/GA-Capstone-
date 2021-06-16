@@ -1,0 +1,30 @@
+{%load static%}
+{%block js_files%}
+    <script defer src={%static 'scripts/boxingScripts/boxing-modal.js'%}></script>
+    <script defer src={%static 'scripts/boxingScripts/boxing-roundTimer.js'%}></script>
+{%endblock%}
+{%block css_files%}
+    <link rel="stylesheet" href={%static 'styles/boxingStyles/boxing-modal.css'%}/>
+    <link rel="stylesheet" href={%static 'styles/boxingStyles/boxing-roundTimer.css'%}/>
+{%endblock%}
+
+{%block content%}
+{% comment %} REPEAT THIS 5 Times - 15minute workout {% endcomment %}
+<h3>BOX - 3 minute Workout</h3>
+<p>Follow along randomized 4 punch combinations until 3 minute timer is up!</p>
+<button id="boxingButton">Begin Workout</button>
+
+<div id="boxingModal" class="modal">
+  <div class="boxing-modal-content">
+    <span class="close">&times;</span>
+    <div>
+        <button type="button" class="startTimer">START</button>
+        <p class="timer">3:00</p>
+        <p class="one">Punch 1</p>
+        <p class="two">Punch 2</p>
+        <p class="three">Punch 3</p>
+        <p class="four">Punch 4</p>
+    </div>
+  </div>
+</div>
+{%endblock%}

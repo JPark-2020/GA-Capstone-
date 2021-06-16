@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+#entryTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  background-color: lightblue;
+}
+
+#entryTable th, #entryTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#entryTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#entryTable tr.header, #entryTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table_header{
+  background: darkred; 
+  color:white; 
+}
+
+#filters{
+  background-color: beige;
+}
+input{
+  background-color: beige;  
+  color: white; 
+}

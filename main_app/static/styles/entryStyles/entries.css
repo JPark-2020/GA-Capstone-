@@ -1,0 +1,40 @@
+.log-header {
+    text-align: center; 
+    font-family: 'Lobster', cursive;
+    border: 5px solid black; 
+    margin-top: 10px; 
+    background-color: lightblue; 
+}
+
+button > a {
+    text-decoration:none; 
+    color: green; 
+}
+
+/* ul > a, li, p{
+    display: inline-flex; 
+    text-decoration: none; 
+    font-size: 22px; 
+    font-family: 'Noto Serif JP', serif;
+} */
+
+
+
+button{
+    margin-left: 20px; 
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+.entrysheet a{
+    font-family: 'Lobster', cursive;
+    font-size: 22px; 
+}
+
+.entrysheet p{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px; 
+}
+body{
+    background-color: lightblue; 
+}

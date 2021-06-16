@@ -1,0 +1,15 @@
+h1{ 
+    font-weight: bolder; 
+    font-family: 'Lobster', cursive;
+    text-align: center; 
+}
+
+form{
+    font-size: 22px; 
+    font-family: 'Noto Serif JP', serif;
+    text-align: center; 
+}
+
+body{
+    background-color: lightblue; 
+}
